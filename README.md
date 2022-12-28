@@ -18,6 +18,6 @@ Se hizo uso de variables tipo objeto (estructura JSON) para guardar las llaves c
 
     Para copiar el texto generado por el algoritmo se hizo uso del objeto navigator.clipboard. Para más información sobre cómo usar navigator.clipboard, favor consultar la documentación en el siguiente enlace:
 
-        * MDN: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard
+    * MDN: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard
 
 #### **Para visualizar código con la lógica, favor hacer click [aquí](./js/encriptor.js)**
