@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4e696e927.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <div class="logo">
+        <img src="images/Vector.png">
+    </div>
+    <div class="panelText">
+        <textarea id="inputMessage" class="inputMessage" placeholder="Ingrese el texto aquí"></textarea>
+        <label class="advertence"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minusculas y sin acentos</label>
+        <div class="buttons">
+            <button class="encriptar" onclick="encryptAndCopyMessage(true)">Encriptar</button>
+            <span></span>
+            <button class="desencriptar" onclick="encryptAndCopyMessage(false)">Desencriptar</button>
+        </div>
+    </div>
+    <div class="panelMessages">
+        <div class="noMessagesPanel" id="noMessagesPanel">
+            <img class="imageMessages" src="images/Muñeco.png">
+            <div class="messageNotFoundPanel">
+                <h2 class="titleMessageNotFound">Ningún mensaje fue encontrado</h2>
+                <p class="messageNotFound">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </div>  
+        <div class="messagesPanel" id="messagesPanel">
+            <textarea class="message" id="message" disabled></textarea>
+            <button class="desencriptar copy" id="btnCopy" onclick="copyText()">Copiar</button>
+        </div>
+    </div>
+    <script src="js/encriptor.js"></script>
+</body>
+</html>
